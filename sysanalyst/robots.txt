@@ -20,4 +20,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://evgenymuravev-netizen.github.io/Digital_aristotle/sysanalyst/sitemap.xml
+Sitemap: https://evgenymuravev-netizen.github.io/McQuaig-Mental-Agility-Test/sysanalyst/sitemap.xml

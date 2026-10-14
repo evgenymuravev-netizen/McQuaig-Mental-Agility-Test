@@ -26,6 +26,7 @@
     ru: {
       "nav.guide": "Руководство",
       "nav.profile": "Ваш профиль",
+      "nav.catalog": "Каталог тестов",
       "nav.employers": "Работодателям",
       "nav.leaderboard": "Рейтинг",
       "nav.support": "Поддержка",

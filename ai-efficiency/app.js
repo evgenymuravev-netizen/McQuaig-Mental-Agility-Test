@@ -41,7 +41,7 @@
         ]),
       ]),
       el("nav", { class: "topnav" }, [
-        el("a", { href: "../index.html", text: "Digital Aristotle" }),
+        el("a", { href: "../index.html", text: T("Test catalogue", "Каталог тестов") }),
         el("select", { class: "lang-select", "aria-label": "Language / Язык",
           onchange: function () { LANG = this.value; try { localStorage.setItem("aie:lang", LANG); } catch (e) {} render(); } },
           [opt("en", "English"), opt("ru", "Русский")]),
