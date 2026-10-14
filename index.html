@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каталог тестов</title>
+  <meta name="description" content="Тренажёр Mental Agility Test, оценка системного аналитика, тест эффективности работы с ИИ и командная диагностика стратегии и культуры." />
+  <style>
+    :root { --bg:#0F1F10; --panel:#16291A; --line:#2A4430; --text:#EEF3E6; --dim:#A9B9A3; --lime:#C6F19D; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 48px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .kicker { color: var(--lime); text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; margin: 0; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 8px 0 10px; }
+    .lead { color: var(--dim); max-width: 46rem; margin: 0 0 28px; }
+    select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: .9rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .card h2 { margin: 0; font-size: 1.2rem; }
+    .tag { align-self: flex-start; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--bg); background: var(--lime); border-radius: 999px; padding: 2px 10px; }
+    .card p { margin: 0; color: var(--dim); font-size: .95rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+    .links a { color: var(--text); text-decoration: none; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: .9rem; }
+    .links a.primary { background: var(--lime); color: var(--bg); border-color: var(--lime); font-weight: 600; }
+    .links a:hover { border-color: var(--lime); }
+    footer { color: var(--dim); font-size: .82rem; margin-top: 32px; border-top: 1px solid var(--line); padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker" data-t="kicker">Тесты и диагностики</p>
+      <select id="lang" aria-label="Language / Язык"><option value="ru">Русский</option><option value="en">English</option></select>
+    </header>
+    <h1 data-t="title">Каталог тестов</h1>
+    <p class="lead" data-t="lead">Всё работает прямо в браузере, на телефоне и компьютере. Ставить ничего не нужно, результаты остаются на устройстве.</p>
+
+    <main class="grid">
+      <section class="card">
+        <span class="tag" data-t="tag1">Тренажёр</span>
+        <h2>Mental Agility Test</h2>
+        <p data-t="d1">Тренировка в формате McQuaig Mental Agility Test: бесплатный 5-минутный тест и десять форм по 15 минут на вербальное, числовое и логическое мышление. После каждого ответа есть разбор.</p>
+        <div class="links">
+          <a class="primary" href="./mmat/" data-t="open">Открыть</a>
+          <a href="./mmat/guide.html" data-t="guide">Стратегия прохождения</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="tag" data-t="tag2">Оценка</span>
+        <h2 data-t="h2">Оценка системного аналитика</h2>
+        <p data-t="d2">225 вопросов про API и REST, протоколы, сети и OSI, очереди сообщений и базы данных, с разбором каждого ответа. Первые 25 вопросов бесплатно.</p>
+        <div class="links">
+          <a class="primary" href="./sysanalyst/" data-t="open">Открыть</a>
+          <a href="./sysanalyst/profile.html" data-t="profile">Профиль кандидата</a>
+          <a href="./sysanalyst/employers.html" data-t="employers">Работодателям</a>
+          <a href="./sysanalyst/tailor.html" data-t="tailor">Тест под вакансию</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="tag" data-t="tag3">Работа с ИИ</span>
+        <h2>AI Efficiency Test</h2>
+        <p data-t="d3">Насколько эффективно человек работает с ИИ в своей роли: продакт-менеджер, системный аналитик, проджект-менеджер. 16 сценариев, около 12 минут. Штрафуется и недоиспользование ИИ, и слепое доверие ему.</p>
+        <div class="links">
+          <a class="primary" href="./ai-efficiency/" data-t="open">Открыть</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="tag" data-t="tag4">Командная диагностика</span>
+        <h2 data-t="h4">Опрос по контурам</h2>
+        <p data-t="d4">Не тест со счётом. Опрос меряет, насколько одинаково команда понимает стратегию и культуру. Ответы анонимны, агрегат виден при 5 и более участниках. Отчёт собирает ведущий.</p>
+        <div class="links">
+          <a class="primary" href="./contours/" data-t="survey">Пройти опрос</a>
+          <a href="./contours/report.html" data-t="report">Отчёт фасилитатора</a>
+        </div>
+      </section>
+    </main>
+
+    <footer data-t="foot">«McQuaig» и «MMAT» упоминаются только для описания формата. Тренажёр независим и не связан с The McQuaig Institute®.</footer>
+  </div>
+  <script>
+    (function () {
+      var EN = {
+        kicker: "Tests and diagnostics", title: "Test catalogue",
+        lead: "Everything runs in the browser, on a phone or a computer. Nothing to install, and results stay on your device.",
+        tag1: "Practice", d1: "Practice in the format of the McQuaig Mental Agility Test: a free 5-minute taster and ten 15-minute forms of verbal, numerical and logical reasoning, with a worked answer for every question.",
+        open: "Open", guide: "Strategy guide",
+        tag2: "Assessment", h2: "System Analyst Assessment",
+        d2: "225 questions on APIs and REST, protocols, networking and OSI, message queues and databases, with an explanation for every answer. The first 25 questions are free.",
+        profile: "Candidate profile", employers: "For employers", tailor: "Tailor to a job",
+        tag3: "Working with AI", d3: "How efficiently someone works with AI in their role: product manager, system analyst, project manager. 16 scenarios, about 12 minutes. It penalises both under-using AI and over-trusting it.",
+        tag4: "Team diagnostic", h4: "Contours survey",
+        d4: "Not a scored test. It measures how similarly a team understands its strategy and culture. Answers are anonymous, and the aggregate appears only with 5 or more responses. The facilitator builds the report.",
+        survey: "Take the survey", report: "Facilitator report",
+        foot: "“McQuaig” and “MMAT” describe the test format only. This practice tool is independent and not affiliated with The McQuaig Institute®."
+      };
+      var RU = {}, els = document.querySelectorAll("[data-t]"), i;
+      for (i = 0; i < els.length; i++) RU[els[i].getAttribute("data-t")] = els[i].textContent;
+      function apply(lang) {
+        var d = lang === "en" ? EN : RU;
+        for (var j = 0; j < els.length; j++) { var k = els[j].getAttribute("data-t"); if (d[k] != null) els[j].textContent = d[k]; }
+        document.documentElement.lang = lang;
+        document.title = d.title;
+      }
+      var sel = document.getElementById("lang"), saved = null;
+      try { saved = localStorage.getItem("hub:lang"); } catch (e) {}
+      var lang = saved || ((navigator.language || "").toLowerCase().indexOf("ru") === 0 ? "ru" : "en");
+      sel.value = lang; apply(lang);
+      sel.addEventListener("change", function () { try { localStorage.setItem("hub:lang", sel.value); } catch (e) {} apply(sel.value); });
+    })();
+  </script>
+</body>
+</html>
